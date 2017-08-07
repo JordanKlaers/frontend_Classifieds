@@ -20,8 +20,11 @@ class TheForm extends React.Component {
     event.preventDefault();
     let formdata = this.state
     console.log(formdata);
-    const request = axios.get('http://localhost:3000/classifieds');
-    console.log(request);
+    axios.post('http://localhost:2000/classifieds', formdata).then(function(result){
+      console.log(result);
+    }).catch(function (error) {
+    console.log(error);
+    });
   }
 
   handleInputChange = (event)=>{

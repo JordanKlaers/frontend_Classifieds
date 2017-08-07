@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import TheForm from './components/form'
+import AllPosts from './components/AllPosts'
 import './App.css';
 
 class App extends Component {
@@ -8,6 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <TheForm></TheForm>
+        <AllPosts></AllPosts>
       </div>
     );
   }
