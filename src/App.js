@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import TheForm from './components/form'
 import AllPosts from './components/AllPosts'
-import './App.css';
+import './index.css';
 
 class App extends Component {
   render() {
